@@ -9,7 +9,9 @@ export function MacbookScrollDemo() {
       <MacbookScroll
         title={
             <span className="select-none">
-              <h1 className="text-5xl ">Welcome to <ColourfulText text="SanXiaoXing's" /> website! 🌟 <br /> </h1>
+              <h1 className="text-5xl ">Welcome to <ColourfulText text="SanXiaoXing's" /> website! 🌟 </h1>
+              <br />
+              <h1 className="text-5xl ">欢迎来到 <ColourfulText text="三小兴" /> 网站 🌟 </h1>
               <span className="text-gray-500 text-xl select-none italic font-serif">
               Your joy shall bloom like petals kissed by dawn, <br />
               where starlight dances in the whispers of your soul.
