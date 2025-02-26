@@ -4,38 +4,27 @@ export function AnimatedTestimonialsList() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "博客页面，这是我个人经历、反思和见解的集合。它反映了我的旅程，也证明了我作为一名开发人员的成长。我希望你喜欢读它。",
+      name: "博客页面",
+      designation: "一个简单的博客，天天开心啊",
+      src: "/blog.png",
+      href: "https://blog.sanxiaoxing.cn",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "GIthub Profile 是我的个人资料页面，并通过个性化的设计，展现我的个人风格，并且可以在 Github 上找到我的开源项目。",
+      name: "GIthub Profile",
+      designation: "SanXiaoXing",
+      src: "/Github_profile.png",
+      href: "https://github.com/SanXiaoXing",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "一个简单的聊天室应用程序，允许用户匿名相互通信。它是基于livekit 和 Next.js的匿名聊天室构建的，为通信提供了一个安全且私密的环境。",
+      name: "匿名聊天室",
+      designation: "一个简单的聊天室应用程序",
+      src: "/room.png",
+      href: "https://room.sanxiaoxing.cn",
     },
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;
