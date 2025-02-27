@@ -1,3 +1,4 @@
+// Copyright (c) 2025 SanXiaoXing. MIT License.
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -6,7 +7,11 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ['images.unsplash.com'],
+    domains: [
+      'images.unsplash.com',
+      'assets.aceternity.com', // 添加报错提示的域名
+      'img.shields.io' // 补充当前代码中使用的徽章图片域名
+    ],
   },
 };
 

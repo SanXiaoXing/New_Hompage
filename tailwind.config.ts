@@ -1,3 +1,4 @@
+// Copyright (c) 2025 SanXiaoXing. MIT License.
 import type { Config } from "tailwindcss";
 
 const {

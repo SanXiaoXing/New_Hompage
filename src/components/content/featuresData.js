@@ -1,12 +1,12 @@
+// Copyright (c) 2025 SanXiaoXing. MIT License.
 import {
   BellIcon,
-  CalendarIcon,
-  FileTextIcon,
-  GlobeIcon,
   GearIcon,
   EnvelopeClosedIcon,
   LightningBoltIcon,
 } from "@radix-ui/react-icons";
+
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Globe } from "@/components/magicui/globe";
 import { AnimatedListDemo } from "../AnimatedList";
@@ -14,6 +14,9 @@ import { Marquee } from "../magicui/marquee";
 import { Boxes } from "../ui/background-boxes";
 import { FiMail } from 'react-icons/fi';
 import { FaGithub, FaTelegram } from 'react-icons/fa';
+import { IconCloudDemo } from "../IconCloud";
+import { LinkPreviewDemo } from "../LinkPreview";
+import ExpandableCardDemo from "../expandable-card-demo-standard";
 
 const files = [
   {
@@ -117,21 +120,24 @@ export const featuresData = [
   },
   {
     Icon: BellIcon,
-    name: "Notifications",
-    description: "Get notified when someone shares a file or mentions you in a comment.",
+    name: "技术栈",
+    description: "关于学习过的相关技术以及框架。",
     href: "/",
-    cta: "Learn more",
+    cta: "Check out",
     className: "col-span-3 lg:col-span-2",
     background: (
       <AnimatedListDemo className="absolute right-2 top-4 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90" />
     ),
+    content: (
+      <IconCloudDemo />
+    )
   },
   {
     Icon: GearIcon,
-    name: "Multilingual",
-    description: "Supports 100+ languages and counting.",
+    name: "更多项目",
+    description: "查看更多好项目",
     href: "/",
-    cta: "Learn more",
+    cta: "Look these",
     className: "col-span-3 lg:col-span-2",
     background: (
       <Marquee
@@ -160,16 +166,54 @@ export const featuresData = [
         ))}
       </Marquee>
     ),
+    content: (
+      <div className="flex flex-col gap-4">
+        <h1 className="text-3xl font-bold mb-8">更多项目</h1>
+        <ExpandableCardDemo/>
+      </div>
+    )
+    
   },
   {
     Icon: LightningBoltIcon,
-    name: "Calendar",
-    description: "Use the calendar to filter your files by date.",
+    name: "开源协议",
+    description: "本网站遵循MIT开源协议，您可以自由使用和修改。",
     href: "/",
     cta: "Learn more",
     background: (
       <Boxes />
     ),
     className: "col-span-3 lg:col-span-1",
+    content: (
+      <div className="flex flex-col gap-4">
+        <h1 className="text-3xl font-bold mb-8">开源协议</h1>
+        <LinkPreviewDemo />
+        <div class="mit-license flex items-center gap-3 p-2.5 bg-gray-50 rounded-lg">
+            <a href="LICENSE" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity">
+              <Image 
+                src="https://img.shields.io/badge/License-MIT-brightgreen.svg" 
+                alt="MIT License" 
+                width={90} 
+                height={30} 
+                className="h-6"
+                unoptimized
+              />
+            </a>
+          <p class="text-gray-700 text-l">
+            本项目基于
+            <a href="/LICENSE" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:text-blue-800 hover:underline">
+              MIT 开源协议
+            </a>
+            发布，可自由使用、修改和分发。
+          </p>
+        </div>
+      </div>
+    ),
   },
 ];
