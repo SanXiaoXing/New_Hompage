@@ -1,5 +1,65 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+
+```
+/
+├─ .gitignore
+├─ public/
+│  ├─ LICENSE
+│  ├─ blog.png
+│  ├─ favicon.svg
+│  └─ fonts/
+│     └─ Cookie-Regular.ttf
+├─ src/
+│  ├─ LICENSE
+│  ├─ app/
+│  │  ├─ desktop/
+│  │  │  └─ page.tsx
+│  │  ├─ favicon.svg
+│  │  ├─ globals.css
+│  │  ├─ layout.tsx
+│  │  ├─ mobile/
+│  │  │  └─ page.tsx
+│  │  └─ page.tsx
+│  ├─ components/
+│  │  ├─ AnimatedBeam.tsx
+│  │  ├─ Layout.tsx
+│  │  ├─ LinkPreview.tsx
+│  │  ├─ MacScoll.tsx
+│  │  ├─ content/
+│  │  │  └─ featuresData.js
+│  │  ├─ magicui/
+│  │  │  ├─ animated-beam.tsx
+│  │  │  ├─ globe.tsx
+│  │  │  ├─ icon-cloud.tsx
+│  │  │  └─ marquee.tsx
+│  │  └─ ui/
+│  │     ├─ animated-modal.tsx
+│  │     ├─ link-preview.tsx
+│  │     ├─ macbook-scroll.tsx
+│  │     ├─ text-hover-effect.tsx
+│  │     └─ tracing-beam.tsx
+│  ├─ data/
+│  │  └─ global.json
+│  ├─ hooks/
+│  │  └─ use-outside-click.tsx
+│  ├─ lib/
+│  │  └─ utils.ts
+│  └─ types/
+│     ├─ device.d.ts
+│     └─ next.d.ts
+├─ tailwind.config.ts
+├─ components.json
+├─ eslint.config.mjs
+├─ next-env.d.ts
+├─ next.config.ts
+├─ package-lock.json
+├─ package.json
+├─ postcss.config.mjs
+├─ README.md
+└─ tsconfig.json
+```
+
 ## Getting Started
 
 First, run the development server:
