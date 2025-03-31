@@ -21,12 +21,12 @@ export default function ColourfulText({ text }: { text: string }) {
 
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentColors((prev) => [...prev.slice(1), prev[0]]); // 旋转颜色数组
-      setCount((prev) => prev + 1); // 更新 count 以触发动画
-    }, 5000);
-
-    return () => clearInterval(interval); // 清理定时器
-  }, []);
+      setCurrentColors((prev) => [...prev.slice(1), prev[0]]);
+      setCount((prev) => prev + 1);
+    }, 8000); // 将间隔从5000ms增加到8000ms
+    
+    return () => clearInterval(interval);
+}, []);
 
   return text.split("").map((char, index) => (
     <motion.span

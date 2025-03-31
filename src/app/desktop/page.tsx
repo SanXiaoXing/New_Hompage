@@ -14,7 +14,7 @@ export default function Desktop() {
         <div className="absolute inset-0 flex justify-center items-center ">
           <TextHoverEffectDemo />
         </div>
-        <DotPattern />
+        {/* <DotPattern /> */}
 
         {/* Macbook滚动效果 */}
         <MacbookScrollDemo />
